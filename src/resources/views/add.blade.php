@@ -17,8 +17,8 @@
                 <h2>お問い合わせ</h2>
             </div>
 
-            <form action="" class="form">
-
+            <form action="/" method="post">
+                @csrf
                 <!--名前-->
                 <div class="form__group">
                     <div class="form__group-title">
@@ -48,8 +48,8 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="radio" name="gender" checked/>男性
-                            <input type="radio" name="gender"/>女性
+                            <input type="radio" name="gender" value="1" checked/>男性
+                            <input type="radio" name="gender" value="2"/>女性
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -122,7 +122,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="text" name="Building"/>
+                            <input type="text" name="building_name"/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -141,7 +141,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--textarea">
-                            <textarea name="content" cols="30" rows="10"></textarea>
+                            <textarea name="opinion" cols="30" rows="10"></textarea>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->

@@ -15,7 +15,8 @@ use App\Http\Controllers\ContactController;
 */
 
 
-Route::get('/',[ContactController::class,'contact']);
+Route::get('/',[ContactController::class,'add']);
+Route::post('/',[ContactController::class,'create']);
 Route::get('/confirm',[ContactController::class,'confirm']);
 Route::get('/thanks',[ContactController::class,'thanks']);
 Route::get('/admin',[ContactController::class,'admin']);

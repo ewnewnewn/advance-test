@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}" />
 </head>
 <body>
+    <!--ヘッダー-->
     <div class="contact-form__content">
         <div class="contact-form__heading">
             <h2>管理システム</h2>
         </div>
     </div>
-
+    <!--検索条件-->
     <div class="search-condition__content">
         <!--1行目-->
         <div class="search-condition__man">
@@ -22,7 +23,6 @@
                 <span class="search-condition__namelabel--item">お名前</span>
                 <input class="search-condition__nameinput" type="text" name="name"/>
             </div>
-
             <div class="search-condition__gender">
                 <span class="search-condition__genderlabel--item">性別</span>
                 <input type="radio" name="gender" class="search-condition__genderradio" checked>全て
@@ -30,7 +30,6 @@
                 <input type="radio" name="gender" class="search-condition__genderradio">女性                
             </div>
         </div>
-        
         <!--2行目-->
         <div class="search-condition__day">
             <div class="search-condition__day--title">
@@ -42,9 +41,7 @@
                     <input class="search-condition__finishinput" type="date" name="finish"/>
                 </div>
             </div>
-
         </div>
-        
         <!--3行目-->
         <div class="search-condition__email">
             <div class="search-condition__email--content">
@@ -52,19 +49,33 @@
                 <input class="search-condition__startinput" type="email" name="email"/>
             </div>
         </div>
-        
         <!--検索ボタン-->
         <div class="search-condition__button">
             <button class="search-condition__button-submit" type="submit">検索</button>
         </div>
-
         <!--リセットリンク-->
         <a class="fix__link" href="/">リセット</a>
-        
     </div>
-
+    <!--検索結果-->
     <div class="search-results__content">
-    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>お名前</th>
+            <th>性別</th>
+            <th>メールアドレス</th>
+            <th>ご意見</th>
+        </tr>
+        @foreach($contacts as $contact)
+        <tr>
+            <td>{{$contact->id}}</td>
+            <td>{{$contact->fullname}}</td>
+            <td>{{$contact->gender}}</td>
+            <td>{{$contact->email}}</td>
+            <td>{{$contact->opinion}}</td>
+        </tr>
+        @endforeach
+    </table>
     </div>
 </body>
 </html>
