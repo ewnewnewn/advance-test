@@ -7,15 +7,23 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function add()
+    public function index()
     {
-        return view('add');
+        return view('index');
     }
 
-    public function create(Request $request)
+    public function confirm(Request $request)
     {
-        $form=[
-            'fullname'=>$request->last_name . "　" . $request->first_name,
+        $contact=$request->only([
+            'lastname','firstname','gender','email','postcode','address','building_name','opinion'
+        ]);
+        return view('confirm',compact('contact'));
+    }
+
+    public function store(Request $request)
+    {
+        $contact=[
+            'fullname'=>$request->lastname . "　" . $request->firstname,
             'gender'=>$request->gender,
             'email'=>$request->email,
             'postcode'=>$request->postcode,
@@ -23,18 +31,7 @@ class ContactController extends Controller
             'building_name'=>$request->building_name,
             'opinion'=>$request->opinion,
         ];
-
-        Contact::create($form);
-        return view('/confirm');        
-    }
-
-    public function confirm()
-    {
-        return view('confirm');
-    }
-
-    public function thanks()
-    {
+        Contact::create($contact);
         return view('thanks');
     }
 

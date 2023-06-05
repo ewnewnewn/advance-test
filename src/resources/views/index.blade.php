@@ -17,7 +17,7 @@
                 <h2>お問い合わせ</h2>
             </div>
 
-            <form action="/" method="post">
+            <form class="form" action="/contacts/confirm" method="post">
                 @csrf
                 <!--名前-->
                 <div class="form__group">
@@ -27,8 +27,8 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="text" name="last_name"/>
-                            <input type="text" name="first_name">
+                            <input type="text" name="lastname" />
+                            <input type="text" name="firstname"/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
