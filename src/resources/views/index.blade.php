@@ -27,8 +27,8 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="text" name="lastname" />
-                            <input type="text" name="firstname"/>
+                            <input type="text" name="firstname"required/>
+                            <input type="text" name="lastname" required/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -48,8 +48,8 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="radio" name="gender" value="1" checked/>男性
-                            <input type="radio" name="gender" value="2"/>女性
+                            <input type="radio" name="gender" value="1" checked required/>男性
+                            <input type="radio" name="gender" value="2" required/>女性
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -65,7 +65,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="email" name="email"/>
+                            <input type="email" name="email" required/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -84,7 +84,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="text" name="postcode" pattern="\d{3}-?\d{4}"/>
+                            <input type="text" name="postcode" pattern="\d{3}-?\d{4}" required/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -104,7 +104,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--text">
-                            <input type="text" name="address"/>
+                            <input type="text" name="address" required/>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -141,7 +141,7 @@
                     </div>
                     <div class="form__group-content">
                         <div class="form__input--textarea">
-                            <textarea name="opinion" cols="30" rows="10"></textarea>
+                            <textarea name="opinion" cols="30" rows="10" required></textarea>
                         </div>
                         <div class="form__error">
                             <!--バリデーション機能を実装したら記述します。-->
@@ -155,10 +155,11 @@
                 </div>
 
             </form>
-
-
-
         </div>
     </main>
+
+    <script>
+
+    </script>
 </body>
 </html>

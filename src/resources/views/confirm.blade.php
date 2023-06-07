@@ -105,9 +105,12 @@
                     </div>
 
                     <!--修正リンク-->
-                    <a class="fix__link" href="/">
-                        修正する
-                    </a>
+                    <form class="fix" action="" method="post">
+                        @csrf
+                        <a class="fix__link" href="/contacts">
+                            修正する
+                        </a>
+                    </form>
                 </form>
             </div>
         </main>
