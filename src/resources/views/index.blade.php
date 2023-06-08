@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お問い合わせフォーム</title>
     <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/contact.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
 </head>
 
 <body>
@@ -34,11 +34,12 @@
                             <!--バリデーション機能を実装したら記述します。-->
                         </div>
                     </div>
-                    <div class="form__input--sample">
-                        <label>例)山田</label>
-                        <label>例)太郎</label>
-                    </div>
                 </div>
+                <div class="form__input--sample">
+                    <label>例)　山田</label>
+                    <label>例)　太郎</label>
+                </div>
+
 
                 <!--性別-->
                 <div class="form__group">
@@ -71,9 +72,9 @@
                             <!--バリデーション機能を実装したら記述します。-->
                         </div>
                     </div>
-                    <div class="form__input--sample">
-                        <label>例)test@email.com</label>
-                    </div>
+                </div>
+                <div class="form__input--sample">
+                    <label>例)　test@email.com</label>
                 </div>
 
                 <!--郵便番号-->
@@ -90,10 +91,11 @@
                             <!--バリデーション機能を実装したら記述します。-->
                         </div>
                     </div>
-                    <div class="form__input--sample">
-                        <label>例)123-4567</label>
-                    </div>
                 </div>
+                <div class="form__input--sample">
+                    <label>例)　123-4567</label>
+                </div>
+
 
 
                 <!--住所-->
@@ -110,10 +112,11 @@
                             <!--バリデーション機能を実装したら記述します。-->
                         </div>
                     </div>
-                    <div class="form__input--sample">
-                        <label>例)東京都渋谷区千駄ヶ谷1-2-3</label>
-                    </div>
                 </div>
+                <div class="form__input--sample">
+                    <label>例)　東京都渋谷区千駄ヶ谷1-2-3</label>
+                </div>
+
 
                 <!--建物名-->
                 <div class="form__group">
@@ -128,10 +131,11 @@
                             <!--バリデーション機能を実装したら記述します。-->
                         </div>
                     </div>  
-                    <div class="form__input--sample">
-                        <label>例)千駄ヶ谷マンション101</label>
-                    </div>
                 </div>
+                <div class="form__input--sample">
+                    <label>例)　千駄ヶ谷マンション101</label>
+                </div>
+
 
                 <!--ご意見-->
                 <div class="form__group">

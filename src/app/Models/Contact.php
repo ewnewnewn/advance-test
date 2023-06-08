@@ -12,4 +12,5 @@ class Contact extends Model
         'fullname','gender','email',
         'postcode','address','building_name','opinion'
     ];
+
 }

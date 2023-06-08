@@ -41,4 +41,16 @@ class ContactController extends Controller
         $contacts=Contact::Paginate(10);
         return view('admin',['contacts'=>$contacts]);
     }
+
+    public function search()
+    {
+        $contacts=Contact::Paginate(10);
+        
+    }
+
+    public function remove(Request $request)
+    {
+        Contact::find($request->id)->delete();
+        return redirect('/admin');
+    }
 }
