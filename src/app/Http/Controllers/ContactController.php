@@ -38,7 +38,7 @@ class ContactController extends Controller
 
     public function admin()
     {
-        $contacts=Contact::all();
+        $contacts=Contact::Paginate(10);
         return view('admin',['contacts'=>$contacts]);
     }
 }

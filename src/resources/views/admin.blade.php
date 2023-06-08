@@ -66,6 +66,10 @@
             <th>メールアドレス</th>
             <th>ご意見</th>
         </tr>
+        <div class="paginate">
+
+            {{$contacts->links()}}
+        </div>
         @foreach($contacts as $contact)
         <tr>
             <td>{{$contact->id}}</td>
