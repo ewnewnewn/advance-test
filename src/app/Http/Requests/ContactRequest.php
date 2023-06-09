@@ -27,7 +27,7 @@ class ContactRequest extends FormRequest
             'firstname'=>'required|string|max:100',
             'lastname'=>'required|string|max:100',
             'fullname'=>'required|string|max:255',
-            'gender'=>'required|boolean|max:1',
+            'gender'=>'required|max:1',
             'email'=>'required|email|max:255',
             'postcode'=>'required|string|max:8',
             'address'=>'required|string|max:255',

@@ -12,5 +12,14 @@ class Contact extends Model
         'fullname','gender','email',
         'postcode','address','building_name','opinion'
     ];
+    public function gender()
+    {
+        return $this->belongsTo(Gender::class,'gender');
+    }
 
+    //public function gender() {
+        //return $this->belongsTo('App\Models\Gender','gender_name');
+        //return $this->belongsTo('App\Models\Gender', 'gender', 'gender_name');
+        //return $this->belongsTo(Gender::class,'gender');
+    //}
 }

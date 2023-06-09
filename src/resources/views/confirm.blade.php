@@ -16,7 +16,7 @@
                 <div class="contact-firm__heading">
                     <h2>お問い合わせ</h2>
                 </div>
-
+                
                 <form class="form" action="/contacts" method="post" >
                     @csrf
 

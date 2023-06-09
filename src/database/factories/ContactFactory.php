@@ -16,7 +16,7 @@ class ContactFactory extends Factory
     {
         return [
             'fullname'=>$this->faker->name,
-            'gender'=>$this->faker->numberBetween(0,1),
+            'gender'=>$this->faker->numberBetween(1,2),
             'email'=>$this->faker->safeEmail,
             'postcode'=>substr_replace($this->faker->postcode, '-', 3, 0),
             'address'=>$this->faker->address,

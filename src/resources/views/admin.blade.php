@@ -66,34 +66,33 @@
 
     <!--検索結果-->
     <div class="search-results__content">
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>お名前</th>
-            <th>性別</th>
-            <th>メールアドレス</th>
-            <th>ご意見</th>
-        </tr>
         <div class="paginate">
             {{$contacts->links()}}
         </div>
-        @foreach($contacts as $contact)
-
-        <tr>
-            <td>{{$contact->id}}</td>
-            <td>{{$contact->fullname}}</td>
-            <td>{{$contact->gender}}</td>
-            <td>{{$contact->email}}</td>
-            <td>{{$contact->opinion}}</td>
-            <td>
-                <form action="/admin?id={{$contact->id}}" method="POST">
-                    @csrf
-                    <button class="delete__button-submit" type="submit">削除</button>
-                </form>
-            </td>
-        </tr>
-        
-        @endforeach
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>お名前</th>
+                <th>性別</th>
+                <th>メールアドレス</th>
+                <th>ご意見</th>
+            </tr>
+            @foreach($contacts as $contact)
+            <tr>
+                <td>{{$contact->id}}</td>
+                <td>{{$contact->fullname}}</td>
+                <td>{{ $contact->gender ? $contact->gender->gender_name : '' }}</td>
+                <!--<td>{{$contact->gender}}</td>-->
+                <td>{{$contact->email}}</td>
+                <td>{{$contact->opinion}}</td>
+                <td>
+                    <form action="/admin?id={{$contact->id}}" method="POST">
+                        @csrf
+                        <button class="delete__button-submit" type="submit">削除</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
     </table>
     </div>
 </body>
