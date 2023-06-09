@@ -47,15 +47,15 @@
 
 ##その他
 
-###未実装
+    ###未実装
 
-    ・ContactモデルとGenderモデルのリレーション
+        ・ContactモデルとGenderモデルのリレーション
 
-    ・Confirmからindexへの移行の際のデータ引継ぎ
+        ・Confirmからindexへの移行の際のデータ引継ぎ
 
-    ・バリデーション
+        ・バリデーション
 
-    ・検索結果opinionの文字圧縮表示
+        ・検索結果opinionの文字圧縮表示
 
-    ・css
+        ・css
 
