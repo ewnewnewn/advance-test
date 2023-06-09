@@ -1,3 +1,135 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    text-align: center;
+}
+
 .form__group {
     display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 40px;
+    margin: 10 auto;
 }
+
+.form__group-title {
+    
+}
+
+.form__label--item {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.form__label--required {
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__input--sample {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__label--required {}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__label--required {}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__input--sample {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__label--required {}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__input--sample {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__label--required {}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__input--sample {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__group-content {}
+
+.form__input--text {}
+
+.form__error {}
+
+.form__input--sample {}
+
+.form__group {}
+
+.form__group-title {}
+
+.form__label--item {}
+
+.form__label--required {}
+
+.form__group-content {}
+
+.form__input--textarea {}
+
+.form__error {}
+
+.form__button {}
+
+.form__button-submit {}

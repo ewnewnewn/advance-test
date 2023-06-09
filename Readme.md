@@ -33,8 +33,7 @@
 
 ##テーブル設計
 
-<---作成したテーブルの画像--->
-
+    <---作成したテーブルの画像--->
     !(https://github.com/ewnewnewn/advance-test/tree/main/img/Table.png)
     !(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_contacts.png)
     !(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_genders.png)
@@ -42,7 +41,7 @@
 
 ##ER図
 
-<---作成したER図の画像--->
+    <---作成したER図の画像--->
     !(https://github.com/ewnewnewn/advance-test/tree/main/img/ER.png)
 
 ##その他
