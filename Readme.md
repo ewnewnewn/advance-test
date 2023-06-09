@@ -35,6 +35,9 @@ Laravel Framework: 8.83.8
 ##テーブル設計
 
 <---作成したテーブルの画像--->
+!(https://github.com/ewnewnewn/advance-test/tree/main/img/Table.png)
+!(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_contacts.png)
+!(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_genders.png)
 
 
 ##ER図
