@@ -36,9 +36,9 @@ Laravel Framework: 8.83.8
 
 <---作成したテーブルの画像--->
 
-!(https://github.com/ewnewnewn/advance-test/tree/main/img/Table.png)
-!(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_contacts.png)
-!(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_genders.png)
+    !(https://github.com/ewnewnewn/advance-test/tree/main/img/Table.png)
+    !(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_contacts.png)
+    !(https://github.com/ewnewnewn/advance-test/tree/main/img/Migtrate_genders.png)
 
 
 ##ER図
@@ -50,9 +50,13 @@ Laravel Framework: 8.83.8
 
 ###未実装
 
-・ContactモデルとGenderモデルのリレーション
-・Confirmからindexへの移行の際のデータ引継ぎ
-・バリデーション
-・検索結果opinionの文字圧縮表示
-・css
+    ・ContactモデルとGenderモデルのリレーション
+
+    ・Confirmからindexへの移行の際のデータ引継ぎ
+
+    ・バリデーション
+
+    ・検索結果opinionの文字圧縮表示
+
+    ・css
 
