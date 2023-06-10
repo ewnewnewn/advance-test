@@ -2,6 +2,7 @@
 
     お問い合わせアプリ
     <---トップ画面の画像--->
+    !(https://github.com/ewnewnewn/advance-test/tree/main/img/index.png)
 
 
 ##作成した目的
