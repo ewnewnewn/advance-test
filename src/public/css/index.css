@@ -5,25 +5,24 @@
 }
 
 .contact-form__heading {
-    text-align: center;
+    margin-left: 200px;
 }
 
 .form__group {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 70%;
-    height: 40px;
-    margin: 10 auto;
+    height: 50px;
 }
 
 .form__group-title {
-    
+    width: 30%;
+    padding-left: 20px;
 }
 
 .form__label--item {
     font-size: 13px;
     font-weight: bold;
-    margin: 0 auto;
 }
 
 .form__label--required {
@@ -32,104 +31,83 @@
     font-weight: bold;
 }
 
-.form__group-content {}
+.form__input--name input {
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+}
 
-.form__input--text {}
+.form__input--sample {
+    margin-left: 200px;
+}
 
-.form__error {}
+.form__input--sample label {
+    font-size: 13px;
+    color: darkgrey;
+    padding-top: 0px;
+    margin-right: 150px;
+}
 
-.form__input--sample {}
 
-.form__group {}
+.form__input--mail input {
+    height: 30px;
+    width: 420px;
+    margin-right: 10px;
+}
 
-.form__group-title {}
 
-.form__label--item {}
+.form__input--postcode input {
+    height: 30px;
+    width: 400px;
+    margin-right: 10px;
+}
 
-.form__label--required {}
+.form__input--postcode::before {
+    content: "〒";
+}
 
-.form__group-content {}
+.form__input--address input {
+    height: 30px;
+    width: 420px;
+    margin-right: 10px;
+}
 
-.form__input--text {}
+.form__input--buildingname input {
+    height: 30px;
+    width: 420px;
+    margin-right: 10px;
+}
 
-.form__error {}
+.form__input--opinion {
+    width: 100%;
+}
 
-.form__group {}
+.form__group--opinion {
+    display: flex;
+    width: 70%;
+    height: 100px;
+}
 
-.form__group-title {}
+.form__input--opinion textarea {
+    width: 420px;
+    height: 100px;
+    margin-top: 5px;
+    padding: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+}
 
-.form__label--item {}
+.form__button {
+    margin-left: 250px;
+    margin-top: 20px;
+}
 
-.form__label--required {}
-
-.form__group-content {}
-
-.form__input--text {}
-
-.form__error {}
-
-.form__input--sample {}
-
-.form__group {}
-
-.form__group-title {}
-
-.form__label--item {}
-
-.form__label--required {}
-
-.form__group-content {}
-
-.form__input--text {}
-
-.form__error {}
-
-.form__input--sample {}
-
-.form__group {}
-
-.form__group-title {}
-
-.form__label--item {}
-
-.form__label--required {}
-
-.form__group-content {}
-
-.form__input--text {}
-
-.form__error {}
-
-.form__input--sample {}
-
-.form__group {}
-
-.form__group-title {}
-
-.form__label--item {}
-
-.form__group-content {}
-
-.form__input--text {}
-
-.form__error {}
-
-.form__input--sample {}
-
-.form__group {}
-
-.form__group-title {}
-
-.form__label--item {}
-
-.form__label--required {}
-
-.form__group-content {}
-
-.form__input--textarea {}
-
-.form__error {}
-
-.form__button {}
-
-.form__button-submit {}
+.form__button-submit {
+    padding: 10px 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -26,7 +26,7 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--name">
                             <input type="text" name="firstname"required/>
                             <input type="text" name="lastname" required/>
                         </div>
@@ -48,7 +48,7 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--radio">
                             <input type="radio" name="gender" value="1" checked required/>男性
                             <input type="radio" name="gender" value="2" required/>女性
                         </div>
@@ -65,7 +65,7 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--mail">
                             <input type="email" name="email" required/>
                         </div>
                         <div class="form__error">
@@ -84,7 +84,7 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--postcode">
                             <input type="text" name="postcode" pattern="\d{3}-?\d{4}" required/>
                         </div>
                         <div class="form__error">
@@ -105,7 +105,7 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--address">
                             <input type="text" name="address" required/>
                         </div>
                         <div class="form__error">
@@ -124,7 +124,7 @@
                         <span class="form__label--item">建物名</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--text">
+                        <div class="form__input--buildingname">
                             <input type="text" name="building_name"/>
                         </div>
                         <div class="form__error">
@@ -138,13 +138,13 @@
 
 
                 <!--ご意見-->
-                <div class="form__group">
+                <div class="form__group--opinion">
                     <div class="form__group-title">
                         <span class="form__label--item">ご意見</span>
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--textarea">
+                        <div class="form__input--opinion">
                             <textarea name="opinion" cols="30" rows="10" required></textarea>
                         </div>
                         <div class="form__error">
